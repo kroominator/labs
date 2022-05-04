@@ -7,62 +7,61 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: ssh deploy
-      # You may pin to the exact commit or the version.
-      # uses: easingthemes/ssh-deploy@c711f2c3391cac2876bf4c833590077f02e4bcb8
-      uses: easingthemes/ssh-deploy@v2.2.11
-      with:
-        # Private Key
-        SSH_PRIVATE_KEY: 
-          -----BEGIN OPENSSH PRIVATE KEY-----
-          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
-          -----END OPENSSH PRIVATE KEY-----
-        # Remote host
-        REMOTE_HOST: linux347.unoeuro.com
-        # Remote user
-        REMOTE_USER: ginkru.dk
-        # Remote port
-        REMOTE_PORT: # optional, default is 22
-        # Source directory
-        SOURCE: # optional, default is 
-        # Target directory
-        TARGET: /public_html/labs/ # optional, default is /home/REMOTE_USER/
-        # Arguments to pass to rsync
-        ARGS: # optional, default is -rltgoDzvO
-        # An array of folder to exclude
-        EXCLUDE: # optional, default is 
-      
+        # You may pin to the exact commit or the version.
+        # uses: easingthemes/ssh-deploy@c711f2c3391cac2876bf4c833590077f02e4bcb8
+        uses: easingthemes/ssh-deploy@v2.2.11
+        with:
+          # Private Key
+          SSH_PRIVATE_KEY: -----BEGIN OPENSSH PRIVATE KEY-----
+            b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAABlwAAAAdzc2gtcn
+            NhAAAAAwEAAQAAAYEAzk7icl3/xOwWR/7Im51nBoHXAaqTB8Fo/cwE9F2iSB3TLJIXPq8/
+            UJKs+UutYUHf6CEPtaNK65qTjs8COQSdUSM/rYDUBxkk1Db2HaqhbrLXajhnvYFGMmoZmb
+            EArcd+PWaV30mI3x+Ihwc5i6y9NTQskSm/b1L9rKSnLIzHuU4mccZtlMPdAztJO+2Hce+K
+            W/PAho2DBkl6m7bLcgg53rkj/QHJL2ItsB5Avr4bAnCtmV4qjtGd/RZs5hAL0vUoCcutrX
+            sFuJyVIfOuaw2F0zR58ipvpk1HRfCcqvN5t0HKHuA7SSAp/yRdgX6qRR7p/ElO/Zyo+GTa
+            x65Gw1cMJmiOus8VJDbl6RdJdQqfWbyPoetv2D30CRY1riv+oDnR5PKjtIF1zKSZJVeTbf
+            8c0lNqnyZS9la/MCjU8GEeOdQejlHEUV33gVtVONqtqLrR6vSQTvGZdPSY4dvNVty2NrDR
+            jsZ4GgejXQy6r4UjnEA5Nwpy1eXC5gUgpgSJboItAAAFkC/QwJ8v0MCfAAAAB3NzaC1yc2
+            EAAAGBAM5O4nJd/8TsFkf+yJudZwaB1wGqkwfBaP3MBPRdokgd0yySFz6vP1CSrPlLrWFB
+            3+ghD7WjSuuak47PAjkEnVEjP62A1AcZJNQ29h2qoW6y12o4Z72BRjJqGZmxAK3Hfj1mld
+            9JiN8fiIcHOYusvTU0LJEpv29S/aykpyyMx7lOJnHGbZTD3QM7STvth3HvilvzwIaNgwZJ
+            epu2y3IIOd65I/0ByS9iLbAeQL6+GwJwrZleKo7Rnf0WbOYQC9L1KAnLra17BbiclSHzrm
+            sNhdM0efIqb6ZNR0XwnKrzebdByh7gO0kgKf8kXYF+qkUe6fxJTv2cqPhk2seuRsNXDCZo
+            jrrPFSQ25ekXSXUKn1m8j6Hrb9g99AkWNa4r/qA50eTyo7SBdcykmSVXk23/HNJTap8mUv
+            ZWvzAo1PBhHjnUHo5RxFFd94FbVTjarai60er0kE7xmXT0mOHbzVbctjaw0Y7GeBoHo10M
+            uq+FI5xAOTcKctXlwuYFIKYEiW6CLQAAAAMBAAEAAAGBALkc5uqflUNoYoWvAuk+Tpb0Ia
+            uJFew7iq1PRpLNATOcL0MqwliofjMZqML3OFav+Owb3jComCzWwde9vszSayXGbviLQ7Qq
+            x3Ty69qqo7bkGY1hlxPeztGlidrxix5ihc8qIQf8vycU8DfYL7Y4BH2clvCZeP+2g49JHg
+            dHOl321V/5H5IAPGsN4yQ2ePWubYMcL3+LsikN/UmCtwFWiDZkAPqfg5lUipIgUw/THAEQ
+            gXO/nogPZacVXBkCBNoAxZIeauj2/JzdH79X2FVxJRHLWbyN52gkjNCRU6JdVLAjurNQ7M
+            ebTT7MNSM8kaD/ZBNlpKwUnu+I/in6EDbsVHxnopLGpAuplqqu7hyy7naRrKrVH5zKkWxN
+            u6Gbv/GWqH1WpCDazSCYGy+V07zWCvRbTm3B2kTIIMm7bewPOXIdjygiGxvyCJ5lIWQZ5Q
+            CAmKuDBvdSfu/nCaD/waphsCbawyrhBHsYp97+6x/LcrjKjYvIhWbkrNXhus6wB+5mgQAA
+            AMEA04E7lPbk338dxIq4UZW405wCzDYJXnhNkB9iaTsBW4ulNpNv4ghtSevyAAjuaoy7RX
+            IAmJknQvtOBL13+pp3nPDHxFlRVGExy88EYwcKovDDsePBQ1N+glhuqF5CtP8QFKFlz11m
+            PXnoyH52kAxv8UpIuYv8ofmry/1L484z3htdHNQHadmqSOfZ9PqfF9zBjqqbHioFK1UK4H
+            rUmWg66enA0EEkXKefS74zQTZNjRQauj22YXqAhJD729R625vzAAAAwQD7Bq6pa5HMuLtp
+            h9W22+vAZ1pdsZJz2H8lU3NB31G3mUXRBw4zv09hcO8LVxhT00qkd7lgcD4nKWW/PZfqyw
+            Np58vkJ+whR6NjuE7eRsRMc56bIRA1dSNL3zw1f1HOCVbx1UY0WOOKk3OobO8AMW4b49xR
+            9jtG7TWapzeOUqkOei1/jZN95HGmFfUAyPVA0/fLGwtgflbVlV/OL5dlozLIwttxIgnxqI
+            RJmgiDxQieYcxqg++oQeZr1mYuGcYyEQUAAADBANJlX2LsIXw5riqfZIfr5qV+PbBV8xg/
+            pev/X+ZHlVDkSTS0WHV8EWh17SG+F07SBG9xE7Mb9yv1V4VmhW5+pT+KiN/7QajLNAOdLW
+            ve0Nu5hmHfzJ7Sb4Fm7q1+QraK2Ue28sqJkyqNkaD+VxmiiDNIYVEspPyP8gYV4JFP/yIF
+            meTzTF2hc0G53/74+HXynmCT+anIBUxVnw1CJjDf9fCo1liNZQhKWess24ROQrYizHo8f6
+            nKksDsbl5OcfSVCQAAABlnaW50YXJla3J1bWluYWl0ZUBHaW50YXJl
+            -----END OPENSSH PRIVATE KEY-----
+          # Remote host
+          REMOTE_HOST: linux347.unoeuro.com
+          # Remote user
+          REMOTE_USER: ginkru.dk
+          # Remote port
+          REMOTE_PORT: # optional, default is 22
+          # Source directory
+          SOURCE: # optional, default is
+          # Target directory
+          TARGET: /public_html/labs/ # optional, default is /home/REMOTE_USER/
+          # Arguments to pass to rsync
+          ARGS: # optional, default is -rltgoDzvO
+          # An array of folder to exclude
+          EXCLUDE: # optional, default is
+
