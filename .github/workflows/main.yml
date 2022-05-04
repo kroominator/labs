@@ -8,7 +8,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Copy via rsync
         # You may pin to the exact commit or the version.
-        uses: kroominator/rsync-deployments-simply-com@6.0.1
+        uses: kroominator/rsync-deployments-simply-com@5.2.simply
         with:
           switches: -avzr --delete
           path: ./
