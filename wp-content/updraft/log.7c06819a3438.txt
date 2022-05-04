@@ -1,0 +1,355 @@
+0000.002 (0) Opened log file at time: Tue, 03 May 2022 09:09:19 +0000 on https://ginkru.dk/labs
+0000.008 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.22.11 WP: 5.9.3 PHP: 7.4.29 (litespeed, Linux linux347.unoeuro.com 3.10.0-962.3.2.lve1.5.67.el7.x86_64 #1 SMP Fri Mar 25 07:13:21 UTC 2022 x86_64) MySQL: 5.7.37-40-log (max packet size=104857600) WPLANG: en_US Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 2048M (used: 6.6M | 8M) multisite: N openssl: OpenSSL 1.0.2k  26 Jan 2017 mcrypt: Y LANG:  ZipArchive::addFile: Y
+0000.009 (0) Free space on disk containing Updraft's temporary directory: 349202.3 MB
+0000.010 (0) Tasks: Backup files:  (schedule: manual) Backup DB: 1 (schedule: daily)
+0000.010 (0) Processed schedules. Tasks now: Backup files:  Backup DB: 1
+0000.020 (0) Requesting semaphore lock (d) (apparently via scheduler: last_scheduled_action_called_at=1651406438, seconds_ago=162521)
+0000.021 (0) Set semaphore last lock (d) time to 2022-05-03 09:09:19
+0000.021 (0) Semaphore lock (d) complete
+0000.023 (0) Backup run: resumption=0, nonce=7c06819a3438, file_nonce=7c06819a3438 begun at=1651568959 (0s ago), job type=backup
+0000.023 (0) Scheduling a resumption (1) after 300 seconds (1651569259) in case this run gets aborted
+0000.044 (0) This backup run is not intended for files - skipping
+0000.045 (0) Beginning creation of database dump (WordPress DB)
+0000.045 (0) SQL compatibility mode is: NO_ENGINE_SUBSTITUTION
+0000.047 (0) Testing potential mysqldump binary: /usr/bin/mysqldump
+0000.090 (0) Output: /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;\n/*!40103 SET TIME_ZONE='+00:00' */;\n/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;\n/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;\n/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;\n/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;\n/*!50717 SELECT COUNT(*) INTO @rocksdb_has_p_s_session_variables FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'performance_schema' AND TABL (truncated - 2647 bytes total)
+0000.090 (0) Working binary mysqldump found: /usr/bin/mysqldump
+0000.203 (0) Table clk_954a8c58e6_options: Total expected rows (via COUNT): 285
+0000.204 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.220 (0) Table clk_954a8c58e6_options: Rows added in this batch (next record: 1141): 281 (uncompressed bytes in this segment=682647) in 0.04 seconds
+0000.222 (0) Table clk_954a8c58e6_options: finishing file(s) (2, 75.7 KB)
+0000.225 (0) Table clk_954a8c58e6_users: Total expected rows (via COUNT): 1
+0000.226 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.228 (0) Table clk_954a8c58e6_users: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=1472) in 0.00 seconds
+0000.229 (0) Table clk_954a8c58e6_users: finishing file(s) (2, 0.6 KB)
+0000.232 (0) Table clk_954a8c58e6_usermeta: Total expected rows (via COUNT): 20
+0000.233 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.234 (0) Table clk_954a8c58e6_usermeta: Rows added in this batch (next record: 20): 20 (uncompressed bytes in this segment=5299) in 0.00 seconds
+0000.236 (0) Table clk_954a8c58e6_usermeta: finishing file(s) (2, 2.1 KB)
+0000.240 (0) Table clk_954a8c58e6_commentmeta: Total expected rows (via COUNT): 0
+0000.240 (0) Table clk_954a8c58e6_commentmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=757) in 0.00 seconds
+0000.242 (0) Table clk_954a8c58e6_commentmeta: finishing file(s) (2, 0.4 KB)
+0000.246 (0) Table clk_954a8c58e6_comments: Total expected rows (via COUNT): 1
+0000.246 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.248 (0) Table clk_954a8c58e6_comments: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=2221) in 0.00 seconds
+0000.249 (0) Table clk_954a8c58e6_comments: finishing file(s) (2, 0.8 KB)
+0000.252 (0) Table clk_954a8c58e6_links: Total expected rows (via COUNT): 0
+0000.253 (0) Table clk_954a8c58e6_links: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1382) in 0.00 seconds
+0000.255 (0) Table clk_954a8c58e6_links: finishing file(s) (2, 0.5 KB)
+0000.257 (0) Table clk_954a8c58e6_postmeta: Total expected rows (via COUNT): 9
+0000.257 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.259 (0) Table clk_954a8c58e6_postmeta: Rows added in this batch (next record: 10): 9 (uncompressed bytes in this segment=1320) in 0.00 seconds
+0000.260 (0) Table clk_954a8c58e6_postmeta: finishing file(s) (2, 0.6 KB)
+0000.263 (0) Table clk_954a8c58e6_posts: Total expected rows (via COUNT): 5
+0000.264 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.265 (0) Table clk_954a8c58e6_posts: Rows added in this batch (next record: 6): 5 (uncompressed bytes in this segment=10160) in 0.00 seconds
+0000.267 (0) Table clk_954a8c58e6_posts: finishing file(s) (2, 3.1 KB)
+0000.268 (0) Table clk_954a8c58e6_term_relationships: Total expected rows (approximate): 0
+0000.270 (0) Table clk_954a8c58e6_term_relationships: Rows added in this batch (next record: 100000): 2 (uncompressed bytes in this segment=798) in 0.00 seconds
+0000.271 (0) Table clk_954a8c58e6_term_relationships: finishing file(s) (2, 0.4 KB)
+0000.274 (0) Table clk_954a8c58e6_term_taxonomy: Total expected rows (via COUNT): 2
+0000.274 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.275 (0) Table clk_954a8c58e6_term_taxonomy: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=1041) in 0.00 seconds
+0000.277 (0) Table clk_954a8c58e6_term_taxonomy: finishing file(s) (2, 0.5 KB)
+0000.281 (0) Table clk_954a8c58e6_termmeta: Total expected rows (via COUNT): 0
+0000.282 (0) Table clk_954a8c58e6_termmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=730) in 0.00 seconds
+0000.283 (0) Table clk_954a8c58e6_termmeta: finishing file(s) (2, 0.4 KB)
+0000.285 (0) Table clk_954a8c58e6_terms: Total expected rows (via COUNT): 2
+0000.286 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.287 (0) Table clk_954a8c58e6_terms: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=867) in 0.00 seconds
+0000.288 (0) Table clk_954a8c58e6_terms: finishing file(s) (2, 0.5 KB)
+0000.288 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_00484ce2eb_actionscheduler_actions
+0000.289 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_00484ce2eb_actionscheduler_claims
+0000.289 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_00484ce2eb_actionscheduler_groups
+0000.289 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_00484ce2eb_actionscheduler_logs
+0000.290 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_00484ce2eb_commentmeta
+0000.290 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_00484ce2eb_comments
+0000.290 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_00484ce2eb_links
+0000.291 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_00484ce2eb_options
+0000.291 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_00484ce2eb_postmeta
+0000.291 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_00484ce2eb_posts
+0000.291 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_00484ce2eb_term_relationships
+0000.292 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_00484ce2eb_term_taxonomy
+0000.292 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_00484ce2eb_termmeta
+0000.292 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_00484ce2eb_terms
+0000.293 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_00484ce2eb_usermeta
+0000.293 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_00484ce2eb_users
+0000.293 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_00484ce2eb_wc_admin_note_actions
+0000.293 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_00484ce2eb_wc_admin_notes
+0000.294 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_00484ce2eb_wc_category_lookup
+0000.294 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_00484ce2eb_wc_customer_lookup
+0000.294 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_00484ce2eb_wc_download_log
+0000.295 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_00484ce2eb_wc_order_coupon_lookup
+0000.295 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_00484ce2eb_wc_order_product_lookup
+0000.295 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_00484ce2eb_wc_order_stats
+0000.296 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_00484ce2eb_wc_order_tax_lookup
+0000.296 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_00484ce2eb_wc_product_meta_lookup
+0000.296 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_00484ce2eb_wc_reserved_stock
+0000.297 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_00484ce2eb_wc_tax_rate_classes
+0000.297 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_00484ce2eb_wc_webhooks
+0000.297 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_00484ce2eb_woocommerce_api_keys
+0000.298 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_00484ce2eb_woocommerce_attribute_taxonomies
+0000.298 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_00484ce2eb_woocommerce_downloadable_product_permissions
+0000.298 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_00484ce2eb_woocommerce_log
+0000.298 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_00484ce2eb_woocommerce_order_itemmeta
+0000.299 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_00484ce2eb_woocommerce_order_items
+0000.299 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_00484ce2eb_woocommerce_payment_tokenmeta
+0000.299 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_00484ce2eb_woocommerce_payment_tokens
+0000.299 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_00484ce2eb_woocommerce_sessions
+0000.300 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_00484ce2eb_woocommerce_shipping_zone_locations
+0000.300 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_00484ce2eb_woocommerce_shipping_zone_methods
+0000.300 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_00484ce2eb_woocommerce_shipping_zones
+0000.300 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_00484ce2eb_woocommerce_tax_rate_locations
+0000.301 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_00484ce2eb_woocommerce_tax_rates
+0000.301 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_00484ce2eb_wpmm_subscribers
+0000.301 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_2b5979088a_commentmeta
+0000.302 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_2b5979088a_comments
+0000.302 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_2b5979088a_links
+0000.302 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_2b5979088a_options
+0000.302 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_2b5979088a_postmeta
+0000.303 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_2b5979088a_posts
+0000.303 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_2b5979088a_term_relationships
+0000.303 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_2b5979088a_term_taxonomy
+0000.303 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_2b5979088a_termmeta
+0000.304 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_2b5979088a_terms
+0000.304 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_2b5979088a_usermeta
+0000.304 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_2b5979088a_users
+0000.304 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_2b5979088a_wpmm_subscribers
+0000.305 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_4ae0db24b9_commentmeta
+0000.305 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_4ae0db24b9_comments
+0000.305 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_4ae0db24b9_et_divi_ab_testing_stats
+0000.305 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_4ae0db24b9_links
+0000.306 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_4ae0db24b9_options
+0000.306 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_4ae0db24b9_postmeta
+0000.306 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_4ae0db24b9_posts
+0000.307 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_4ae0db24b9_term_relationships
+0000.307 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_4ae0db24b9_term_taxonomy
+0000.307 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_4ae0db24b9_termmeta
+0000.307 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_4ae0db24b9_terms
+0000.308 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_4ae0db24b9_usermeta
+0000.308 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_4ae0db24b9_users
+0000.308 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_4ae0db24b9_wpmm_subscribers
+0000.308 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_78e7a84676_commentmeta
+0000.309 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_78e7a84676_comments
+0000.309 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_78e7a84676_links
+0000.309 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_78e7a84676_options
+0000.309 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_78e7a84676_postmeta
+0000.310 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_78e7a84676_posts
+0000.310 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_78e7a84676_term_relationships
+0000.310 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_78e7a84676_term_taxonomy
+0000.310 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_78e7a84676_termmeta
+0000.311 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_78e7a84676_terms
+0000.311 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_78e7a84676_usermeta
+0000.311 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_78e7a84676_users
+0000.311 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_78e7a84676_wpmm_subscribers
+0000.312 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_8b3359b264_commentmeta
+0000.312 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_8b3359b264_comments
+0000.312 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_8b3359b264_links
+0000.312 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_8b3359b264_options
+0000.313 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_8b3359b264_postmeta
+0000.313 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_8b3359b264_posts
+0000.313 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_8b3359b264_term_relationships
+0000.313 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_8b3359b264_term_taxonomy
+0000.314 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_8b3359b264_termmeta
+0000.314 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_8b3359b264_terms
+0000.314 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_8b3359b264_usermeta
+0000.314 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_8b3359b264_users
+0000.315 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_8b3359b264_wpmm_subscribers
+0000.317 (0) Table clk_954a8c58e6_cmplz_cookiebanners: Total expected rows (via COUNT): 1
+0000.317 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.318 (0) Table clk_954a8c58e6_cmplz_cookiebanners: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=7611) in 0.00 seconds
+0000.319 (0) Table clk_954a8c58e6_cmplz_cookiebanners: finishing file(s) (2, 1.9 KB)
+0000.323 (0) Table clk_954a8c58e6_cmplz_cookies: Total expected rows (via COUNT): 56
+0000.324 (0) Table is relatively small; fetch_rows will thus be: 100 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.325 (0) Table clk_954a8c58e6_cmplz_cookies: Rows added in this batch (next record: 56): 56 (uncompressed bytes in this segment=11219) in 0.00 seconds
+0000.327 (0) Table clk_954a8c58e6_cmplz_cookies: finishing file(s) (2, 2.2 KB)
+0000.330 (0) Table clk_954a8c58e6_cmplz_dnsmpd: Total expected rows (via COUNT): 0
+0000.331 (0) Table clk_954a8c58e6_cmplz_dnsmpd: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=648) in 0.00 seconds
+0000.333 (0) Table clk_954a8c58e6_cmplz_dnsmpd: finishing file(s) (2, 0.4 KB)
+0000.336 (0) Table clk_954a8c58e6_cmplz_services: Total expected rows (via COUNT): 17
+0000.336 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.337 (0) Table clk_954a8c58e6_cmplz_services: Rows added in this batch (next record: 17): 17 (uncompressed bytes in this segment=3650) in 0.00 seconds
+0000.338 (0) Table clk_954a8c58e6_cmplz_services: finishing file(s) (2, 1.1 KB)
+0000.341 (0) Table clk_954a8c58e6_e_events: Total expected rows (via COUNT): 0
+0000.343 (0) Table clk_954a8c58e6_e_events: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=601) in 0.00 seconds
+0000.344 (0) Table clk_954a8c58e6_e_events: finishing file(s) (2, 0.4 KB)
+0000.348 (0) Table clk_954a8c58e6_wpmm_subscribers: Total expected rows (via COUNT): 0
+0000.349 (0) Table clk_954a8c58e6_wpmm_subscribers: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=568) in 0.00 seconds
+0000.350 (0) Table clk_954a8c58e6_wpmm_subscribers: finishing file(s) (2, 0.3 KB)
+0000.353 (0) Table clk_954a8c58e6_yoast_indexable: Total expected rows (via COUNT): 9
+0000.353 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.355 (0) Table clk_954a8c58e6_yoast_indexable: Rows added in this batch (next record: 9): 9 (uncompressed bytes in this segment=7672) in 0.00 seconds
+0000.356 (0) Table clk_954a8c58e6_yoast_indexable: finishing file(s) (2, 1.7 KB)
+0000.358 (0) Table clk_954a8c58e6_yoast_indexable_hierarchy: Total expected rows (approximate): 6
+0000.359 (0) Table clk_954a8c58e6_yoast_indexable_hierarchy: Rows added in this batch (next record: 1000): 6 (uncompressed bytes in this segment=974) in 0.00 seconds
+0000.361 (0) Table clk_954a8c58e6_yoast_indexable_hierarchy: finishing file(s) (2, 0.4 KB)
+0000.364 (0) Table clk_954a8c58e6_yoast_migrations: Total expected rows (via COUNT): 23
+0000.364 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.366 (0) Table clk_954a8c58e6_yoast_migrations: Rows added in this batch (next record: 23): 23 (uncompressed bytes in this segment=1348) in 0.00 seconds
+0000.368 (0) Table clk_954a8c58e6_yoast_migrations: finishing file(s) (2, 0.6 KB)
+0000.371 (0) Table clk_954a8c58e6_yoast_primary_term: Total expected rows (via COUNT): 0
+0000.373 (0) Table clk_954a8c58e6_yoast_primary_term: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=930) in 0.00 seconds
+0000.374 (0) Table clk_954a8c58e6_yoast_primary_term: finishing file(s) (2, 0.5 KB)
+0000.378 (0) Table clk_954a8c58e6_yoast_seo_links: Total expected rows (via COUNT): 1
+0000.378 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.380 (0) Table clk_954a8c58e6_yoast_seo_links: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=1223) in 0.00 seconds
+0000.381 (0) Table clk_954a8c58e6_yoast_seo_links: finishing file(s) (2, 0.5 KB)
+0000.381 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_9a70a66a81_commentmeta
+0000.382 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_9a70a66a81_comments
+0000.382 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_9a70a66a81_links
+0000.382 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_9a70a66a81_options
+0000.382 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_9a70a66a81_postmeta
+0000.383 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_9a70a66a81_posts
+0000.383 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_9a70a66a81_term_relationships
+0000.383 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_9a70a66a81_term_taxonomy
+0000.383 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_9a70a66a81_termmeta
+0000.384 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_9a70a66a81_terms
+0000.384 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_9a70a66a81_usermeta
+0000.384 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_9a70a66a81_users
+0000.385 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_9a70a66a81_wpmm_subscribers
+0000.385 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_ab40cb0665_commentmeta
+0000.385 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_ab40cb0665_comments
+0000.385 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_ab40cb0665_links
+0000.386 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_ab40cb0665_options
+0000.386 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_ab40cb0665_postmeta
+0000.386 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_ab40cb0665_posts
+0000.386 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_ab40cb0665_term_relationships
+0000.387 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_ab40cb0665_term_taxonomy
+0000.387 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_ab40cb0665_termmeta
+0000.387 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_ab40cb0665_terms
+0000.387 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_ab40cb0665_usermeta
+0000.388 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_ab40cb0665_users
+0000.388 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_ab40cb0665_wpmm_subscribers
+0000.388 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_ad5e62bf15_commentmeta
+0000.388 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_ad5e62bf15_comments
+0000.389 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_ad5e62bf15_links
+0000.389 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_ad5e62bf15_options
+0000.389 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_ad5e62bf15_postmeta
+0000.389 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_ad5e62bf15_posts
+0000.390 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_ad5e62bf15_term_relationships
+0000.390 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_ad5e62bf15_term_taxonomy
+0000.391 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_ad5e62bf15_termmeta
+0000.391 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_ad5e62bf15_terms
+0000.392 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_ad5e62bf15_usermeta
+0000.392 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_ad5e62bf15_users
+0000.392 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_ad5e62bf15_wpmm_subscribers
+0000.393 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_f637b1f9f9_commentmeta
+0000.393 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_f637b1f9f9_comments
+0000.393 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_f637b1f9f9_links
+0000.393 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_f637b1f9f9_options
+0000.394 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_f637b1f9f9_postmeta
+0000.394 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_f637b1f9f9_posts
+0000.394 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_f637b1f9f9_term_relationships
+0000.394 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_f637b1f9f9_term_taxonomy
+0000.395 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_f637b1f9f9_termmeta
+0000.395 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_f637b1f9f9_terms
+0000.395 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_f637b1f9f9_usermeta
+0000.395 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_f637b1f9f9_users
+0000.396 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): clk_f637b1f9f9_wpmm_subscribers
+0000.396 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): wp_2021_commentmeta
+0000.396 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): wp_2021_comments
+0000.396 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): wp_2021_links
+0000.397 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): wp_2021_options
+0000.397 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): wp_2021_postmeta
+0000.397 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): wp_2021_posts
+0000.397 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): wp_2021_sbi_instagram_feed_locator
+0000.398 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): wp_2021_sbi_instagram_feeds_posts
+0000.398 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): wp_2021_sbi_instagram_posts
+0000.399 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): wp_2021_term_relationships
+0000.399 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): wp_2021_term_taxonomy
+0000.400 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): wp_2021_termmeta
+0000.400 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): wp_2021_terms
+0000.400 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): wp_2021_usermeta
+0000.401 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): wp_2021_users
+0000.401 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): wp_2021_yoast_indexable
+0000.401 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): wp_2021_yoast_indexable_hierarchy
+0000.402 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): wp_2021_yoast_migrations
+0000.402 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): wp_2021_yoast_primary_term
+0000.403 (0) Skipping table (lacks our prefix (clk_954a8c58e6_)): wp_2021_yoast_seo_links
+0000.404 (0) backup_2022-05-03-0909_My_new_WordPress_installation_7c06819a3438-db-table-clk_954a8c58e6_options.table.tmpr1142.gz (1/192/fopen): adding to final database dump
+0000.405 (0) backup_2022-05-03-0909_My_new_WordPress_installation_7c06819a3438-db-table-clk_954a8c58e6_options.table.gz (2/192/fopen): adding to final database dump
+0000.405 (0) backup_2022-05-03-0909_My_new_WordPress_installation_7c06819a3438-db-table-clk_954a8c58e6_users.table.tmpr2.gz (3/192/fopen): adding to final database dump
+0000.406 (0) backup_2022-05-03-0909_My_new_WordPress_installation_7c06819a3438-db-table-clk_954a8c58e6_users.table.gz (4/192/fopen): adding to final database dump
+0000.406 (0) backup_2022-05-03-0909_My_new_WordPress_installation_7c06819a3438-db-table-clk_954a8c58e6_usermeta.table.tmpr21.gz (5/192/fopen): adding to final database dump
+0000.406 (0) backup_2022-05-03-0909_My_new_WordPress_installation_7c06819a3438-db-table-clk_954a8c58e6_usermeta.table.gz (6/192/fopen): adding to final database dump
+0000.407 (0) backup_2022-05-03-0909_My_new_WordPress_installation_7c06819a3438-db-table-clk_954a8c58e6_commentmeta.table.tmpr0.gz (7/192/fopen): adding to final database dump
+0000.407 (0) backup_2022-05-03-0909_My_new_WordPress_installation_7c06819a3438-db-table-clk_954a8c58e6_commentmeta.table.gz (8/192/fopen): adding to final database dump
+0000.408 (0) backup_2022-05-03-0909_My_new_WordPress_installation_7c06819a3438-db-table-clk_954a8c58e6_comments.table.tmpr2.gz (9/192/fopen): adding to final database dump
+0000.408 (0) backup_2022-05-03-0909_My_new_WordPress_installation_7c06819a3438-db-table-clk_954a8c58e6_comments.table.gz (10/192/fopen): adding to final database dump
+0000.408 (0) backup_2022-05-03-0909_My_new_WordPress_installation_7c06819a3438-db-table-clk_954a8c58e6_links.table.tmpr0.gz (11/192/fopen): adding to final database dump
+0000.409 (0) backup_2022-05-03-0909_My_new_WordPress_installation_7c06819a3438-db-table-clk_954a8c58e6_links.table.gz (12/192/fopen): adding to final database dump
+0000.409 (0) backup_2022-05-03-0909_My_new_WordPress_installation_7c06819a3438-db-table-clk_954a8c58e6_postmeta.table.tmpr11.gz (13/192/fopen): adding to final database dump
+0000.409 (0) backup_2022-05-03-0909_My_new_WordPress_installation_7c06819a3438-db-table-clk_954a8c58e6_postmeta.table.gz (14/192/fopen): adding to final database dump
+0000.410 (0) backup_2022-05-03-0909_My_new_WordPress_installation_7c06819a3438-db-table-clk_954a8c58e6_posts.table.tmpr7.gz (15/192/fopen): adding to final database dump
+0000.410 (0) backup_2022-05-03-0909_My_new_WordPress_installation_7c06819a3438-db-table-clk_954a8c58e6_posts.table.gz (16/192/fopen): adding to final database dump
+0000.411 (0) backup_2022-05-03-0909_My_new_WordPress_installation_7c06819a3438-db-table-clk_954a8c58e6_term_relationships.table.tmpr100001.gz (17/192/fopen): adding to final database dump
+0000.411 (0) backup_2022-05-03-0909_My_new_WordPress_installation_7c06819a3438-db-table-clk_954a8c58e6_term_relationships.table.gz (18/192/fopen): adding to final database dump
+0000.411 (0) backup_2022-05-03-0909_My_new_WordPress_installation_7c06819a3438-db-table-clk_954a8c58e6_term_taxonomy.table.tmpr3.gz (19/192/fopen): adding to final database dump
+0000.412 (0) backup_2022-05-03-0909_My_new_WordPress_installation_7c06819a3438-db-table-clk_954a8c58e6_term_taxonomy.table.gz (20/192/fopen): adding to final database dump
+0000.412 (0) backup_2022-05-03-0909_My_new_WordPress_installation_7c06819a3438-db-table-clk_954a8c58e6_termmeta.table.tmpr0.gz (21/192/fopen): adding to final database dump
+0000.412 (0) backup_2022-05-03-0909_My_new_WordPress_installation_7c06819a3438-db-table-clk_954a8c58e6_termmeta.table.gz (22/192/fopen): adding to final database dump
+0000.413 (0) backup_2022-05-03-0909_My_new_WordPress_installation_7c06819a3438-db-table-clk_954a8c58e6_terms.table.tmpr3.gz (23/192/fopen): adding to final database dump
+0000.413 (0) backup_2022-05-03-0909_My_new_WordPress_installation_7c06819a3438-db-table-clk_954a8c58e6_terms.table.gz (24/192/fopen): adding to final database dump
+0000.413 (0) backup_2022-05-03-0909_My_new_WordPress_installation_7c06819a3438-db-table-clk_954a8c58e6_cmplz_cookiebanners.table.tmpr2.gz (25/192/fopen): adding to final database dump
+0000.414 (0) backup_2022-05-03-0909_My_new_WordPress_installation_7c06819a3438-db-table-clk_954a8c58e6_cmplz_cookiebanners.table.gz (26/192/fopen): adding to final database dump
+0000.414 (0) backup_2022-05-03-0909_My_new_WordPress_installation_7c06819a3438-db-table-clk_954a8c58e6_cmplz_cookies.table.tmpr57.gz (27/192/fopen): adding to final database dump
+0000.414 (0) backup_2022-05-03-0909_My_new_WordPress_installation_7c06819a3438-db-table-clk_954a8c58e6_cmplz_cookies.table.gz (28/192/fopen): adding to final database dump
+0000.415 (0) backup_2022-05-03-0909_My_new_WordPress_installation_7c06819a3438-db-table-clk_954a8c58e6_cmplz_dnsmpd.table.tmpr0.gz (29/192/fopen): adding to final database dump
+0000.415 (0) backup_2022-05-03-0909_My_new_WordPress_installation_7c06819a3438-db-table-clk_954a8c58e6_cmplz_dnsmpd.table.gz (30/192/fopen): adding to final database dump
+0000.415 (0) backup_2022-05-03-0909_My_new_WordPress_installation_7c06819a3438-db-table-clk_954a8c58e6_cmplz_services.table.tmpr18.gz (31/192/fopen): adding to final database dump
+0000.416 (0) backup_2022-05-03-0909_My_new_WordPress_installation_7c06819a3438-db-table-clk_954a8c58e6_cmplz_services.table.gz (32/192/fopen): adding to final database dump
+0000.416 (0) backup_2022-05-03-0909_My_new_WordPress_installation_7c06819a3438-db-table-clk_954a8c58e6_e_events.table.tmpr0.gz (33/192/fopen): adding to final database dump
+0000.417 (0) backup_2022-05-03-0909_My_new_WordPress_installation_7c06819a3438-db-table-clk_954a8c58e6_e_events.table.gz (34/192/fopen): adding to final database dump
+0000.417 (0) backup_2022-05-03-0909_My_new_WordPress_installation_7c06819a3438-db-table-clk_954a8c58e6_wpmm_subscribers.table.tmpr0.gz (35/192/fopen): adding to final database dump
+0000.417 (0) backup_2022-05-03-0909_My_new_WordPress_installation_7c06819a3438-db-table-clk_954a8c58e6_wpmm_subscribers.table.gz (36/192/fopen): adding to final database dump
+0000.418 (0) backup_2022-05-03-0909_My_new_WordPress_installation_7c06819a3438-db-table-clk_954a8c58e6_yoast_indexable.table.tmpr10.gz (37/192/fopen): adding to final database dump
+0000.418 (0) backup_2022-05-03-0909_My_new_WordPress_installation_7c06819a3438-db-table-clk_954a8c58e6_yoast_indexable.table.gz (38/192/fopen): adding to final database dump
+0000.419 (0) backup_2022-05-03-0909_My_new_WordPress_installation_7c06819a3438-db-table-clk_954a8c58e6_yoast_indexable_hierarchy.table.tmpr1001.gz (39/192/fopen): adding to final database dump
+0000.419 (0) backup_2022-05-03-0909_My_new_WordPress_installation_7c06819a3438-db-table-clk_954a8c58e6_yoast_indexable_hierarchy.table.gz (40/192/fopen): adding to final database dump
+0000.419 (0) backup_2022-05-03-0909_My_new_WordPress_installation_7c06819a3438-db-table-clk_954a8c58e6_yoast_migrations.table.tmpr24.gz (41/192/fopen): adding to final database dump
+0000.420 (0) backup_2022-05-03-0909_My_new_WordPress_installation_7c06819a3438-db-table-clk_954a8c58e6_yoast_migrations.table.gz (42/192/fopen): adding to final database dump
+0000.420 (0) backup_2022-05-03-0909_My_new_WordPress_installation_7c06819a3438-db-table-clk_954a8c58e6_yoast_primary_term.table.tmpr0.gz (43/192/fopen): adding to final database dump
+0000.421 (0) backup_2022-05-03-0909_My_new_WordPress_installation_7c06819a3438-db-table-clk_954a8c58e6_yoast_primary_term.table.gz (44/192/fopen): adding to final database dump
+0000.421 (0) backup_2022-05-03-0909_My_new_WordPress_installation_7c06819a3438-db-table-clk_954a8c58e6_yoast_seo_links.table.tmpr2.gz (45/192/fopen): adding to final database dump
+0000.421 (0) backup_2022-05-03-0909_My_new_WordPress_installation_7c06819a3438-db-table-clk_954a8c58e6_yoast_seo_links.table.gz (46/192/fopen): adding to final database dump
+0000.425 (0) backup_2022-05-03-0909_My_new_WordPress_installation_7c06819a3438-db.gz: finished writing out complete database file (96.3 KB)
+0000.428 (0) Total database tables backed up: 23 (backup_2022-05-03-0909_My_new_WordPress_installation_7c06819a3438-db.gz, size: 98719, sha1: 22a9a45e7213fc4e4099e53f01ae96d466431707, sha256: 3abc432f58cdaa8293b73af97311d635a5930f4706d8dbf63540979e86000883)
+0000.432 (0) backup_2022-05-03-0909_My_new_WordPress_installation_7c06819a3438-db.gz: db: This file has not yet been successfully uploaded: will queue
+0000.432 (0) Saving backup history. Total backup size: 96.4 KB
+0000.434 (0) Requesting upload of the files that have not yet been successfully uploaded (1)
+0000.435 (0) Cloud backup selection (1/1): googledrive with instance (1/1) (last)
+0000.435 (0) Beginning dispatch of backup to remote (googledrive) (instance identifier s-d1d041ecd9bedf2665ad753e13985673)
+0002.899 (0) Google Drive: quota usage: used=6327.5 MB, total=102400 MB, available=96072.5 MB
+0002.900 (0) Google Drive: backup_2022-05-03-0909_My_new_WordPress_installation_7c06819a3438-db.gz: Attempting to upload to Google Drive (into folder id: 1Xr-4bCplag4_q1PjjsZwjkW507iYMhoX)
+0004.331 (0) Googledrive chunked upload: 100 % uploaded
+0004.332 (0) Google Drive: OK: Archive backup_2022-05-03-0909_My_new_WordPress_installation_7c06819a3438-db.gz uploaded in 1.43 seconds
+0004.332 (0) Recording as successfully uploaded: backup_2022-05-03-0909_My_new_WordPress_installation_7c06819a3438-db.gz
+0004.333 (0) Deleting local file: backup_2022-05-03-0909_My_new_WordPress_installation_7c06819a3438-db.gz: OK
+0004.334 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0004.335 (0) Number of backup sets in history: 4; groups (db): 1
+0004.335 (0) Examining (for databases) backup set with group_id=0, nonce=7c06819a3438, datestamp=1651568959 (May 03 2022 09:09:19)
+0004.336 (0) This backup set is the backup set just made, so will not be deleted.
+0004.336 (0) Examining (for databases) backup set with group_id=0, nonce=99c25a38e315, datestamp=1651406438 (May 01 2022 12:00:38)
+0004.336 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0004.336 (0) Examining (for databases) backup set with group_id=0, nonce=e1a69356e820, datestamp=1651239474 (Apr 29 2022 13:37:54)
+0004.336 (0) 1651239474: db: this set includes a database (backup_2022-04-29-1337_My_new_WordPress_installation_e1a69356e820-db.gz); db count is now 2
+0004.336 (0) 1651239474: db: over retain limit (2); will delete this database
+0004.336 (0) Delete file: backup_2022-04-29-1337_My_new_WordPress_installation_e1a69356e820-db.gz, service=googledrive
+0005.723 (0) Google Drive: backup_2022-04-29-1337_My_new_WordPress_installation_e1a69356e820-db.gz: Deletion successful
+0005.725 (0) This backup set is now empty; will remove from history
+0005.725 (0) Corresponding log file (log.e1a69356e820.txt) not found - must have already been deleted
+0005.727 (0) Examining (for databases) backup set with group_id=0, nonce=465b8334a8a6, datestamp=1650543170 (Apr 21 2022 12:12:50)
+0005.727 (0) Number of backup sets in history: 3; groups (files): 1
+0005.727 (0) Examining (for files) backup set with nonce=7c06819a3438, datestamp=1651568959 (May 03 2022 09:09:19)
+0005.727 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0005.728 (0) Examining (for files) backup set with nonce=99c25a38e315, datestamp=1651406438 (May 01 2022 12:00:38)
+0005.728 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0005.728 (0) Examining (for files) backup set with nonce=465b8334a8a6, datestamp=1650543170 (Apr 21 2022 12:12:50)
+0005.728 (0) This backup set remains non-empty (f=1/d=0); will retain in history
+0005.728 (0) Retain: saving new backup history (sets now: 3) and finishing retain operation
+0005.730 (0) Resume backup (7c06819a3438, 0): finish run
+0005.731 (0) Decremented the semaphore (d) by 1
+0005.731 (0) Semaphore (d) unlocked
+0005.732 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0005.733 (0) No email will/can be sent - the user has not configured an email address.
+0005.733 (0) The backup apparently succeeded and is now complete
