@@ -6,39 +6,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Copy via ssh
+      - name: Copy via rsync
         # You may pin to the exact commit or the version.
-        # uses: garygrossgarten/github-action-scp@dba89d858413133b6e35da91a3c989cc8cde3ad4
-        uses: garygrossgarten/github-action-scp@v0.7.3
+        uses: kroominator/rsync-deployments-simply-com
         with:
-          # Path to the local folder you want to copy.
-          local: ./
-          # Path on the remote server to copy to.
-          remote: /public_html/labs/
-          # Determines if files with  leading dot (.) on folder copy is included
-          dotfiles: # optional
-          # If it is a directory, remote files in it will be deleted before the copy is started.
-          rmRemote: # optional
-          # Number of concurrent file transfers.
-          concurrency: # optional, default is 1
-          # Wether copy of directory should be recursive
-          recursive: # optional, default is true
-          # Log status of every file copy
-          verbose: # optional, default is true
-          # Hostname or IP address of the server.
-          host: linux347.unoeuro.com # optional, default is localhost
-          # Username for authentication.
-          username: ginkru.dk # optional
-          # Port number of the server.
-          port: # optional, default is 22
-          # File Location or string that contains a private key for either key-based or hostbased user authentication (OpenSSH format)
-          privateKey: ${{ secrets.SSH_PRIVKEY }} # optional
-          # Password for password-based user authentication.
-          password: Slaptazodis29 # optional
-          # For an encrypted private key, this is the passphrase used to decrypt it.
-          passphrase: # optional
-          # Try keyboard-interactive user authentication if primary user authentication method fails.
-          tryKeyboard: true # optional
-          # Upload files to temporary file first, then rename once upload completed
-          atomicPut: # optional
-
+          switches: -avzr --delete
+          path: ./
+          remote_path: /public_html/labs/
+          remote_host: linux347.unoeuro.com
+          remote_user: ginkru.dk
+          remote_password: Slaptazodis29
+          remote_key: ${{ secrets.SSH_PRIVKEY }}
