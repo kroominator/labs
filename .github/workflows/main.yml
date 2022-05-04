@@ -12,7 +12,7 @@ jobs:
         uses: garygrossgarten/github-action-scp@v0.7.3
         with:
           # Path to the local folder you want to copy.
-          local:
+          local: ./
           # Path on the remote server to copy to.
           remote: /public_html/labs/
           # Determines if files with  leading dot (.) on folder copy is included
