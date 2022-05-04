@@ -13,5 +13,5 @@ jobs:
           user: ginkru.dk
           password: Slaptazodis29
           localDir: "/home/runner/work/labs/labs/"
-          remoteDir: "/public_html/trash/"
+          remoteDir: "/public_html/labs/"
           options: "--delete --asci"
