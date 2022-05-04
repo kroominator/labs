@@ -1,0 +1,17 @@
+name: Deploy via ftp
+on: push
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Upload ftp
+        uses: sebastianpopp/ftp-action@releases/v2
+        with:
+          host: linux347.unoeuro.com
+          user: ginkru.dk
+          password: Slaptazodis29
+          localDir: "./"
+          remoteDir: "/public_html/labs"
+          options: "--delete --asci"
