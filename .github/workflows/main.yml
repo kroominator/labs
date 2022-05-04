@@ -12,6 +12,6 @@ jobs:
           host: linux347.unoeuro.com
           user: ginkru.dk
           password: Slaptazodis29
-          localDir: "/"
-          remoteDir: "/public_html/trash"
+          localDir: "/home/runner/work/labs/labs/"
+          remoteDir: "/public_html/trash/"
           options: "--delete --asci"
