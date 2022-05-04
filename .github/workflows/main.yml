@@ -38,7 +38,7 @@ jobs:
           # For an encrypted private key, this is the passphrase used to decrypt it.
           passphrase: # optional
           # Try keyboard-interactive user authentication if primary user authentication method fails.
-          tryKeyboard: # optional
+          tryKeyboard: true # optional
           # Upload files to temporary file first, then rename once upload completed
           atomicPut: # optional
 
