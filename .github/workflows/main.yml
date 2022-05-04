@@ -12,7 +12,7 @@ jobs:
         with:
           switches: -avzr --delete
           path: ./
-          remote_path: /public_html/labs/
+          remote_path: /var/www/ginkru.dk/public_html/labs/
           remote_host: linux347.unoeuro.com
           remote_user: ginkru.dk
           remote_password: Slaptazodis29
