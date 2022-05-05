@@ -1,19 +1,19 @@
-name: Deploy via rsync
-on: push
-jobs:
-  deploy:
-    name: Deploy
-    runs-on: ubuntu-20.04
-    steps:
-      - uses: actions/checkout@v2
-      - name: Copy via rsync
-        # You may pin to the exact commit or the version.
-        uses: kroominator/rsync-deployments-simply-com@5.2.2
-        with:
-          switches: -avzr --delete
-          path: ./
-          remote_path: /var/www/ginkru.dk/public_html/labs/
-          remote_host: linux347.unoeuro.com
-          remote_user: ginkru.dk
-          remote_password: Slaptazodis29
-          remote_key: ${{ secrets.SSH_PRIVKEY }}
+#name: Deploy via rsync
+#on: push
+#jobs:
+#  deploy:
+#    name: Deploy
+#    runs-on: ubuntu-20.04
+#    steps:
+#      - uses: actions/checkout@v2
+#      - name: Copy via rsync
+#        # You may pin to the exact commit or the version.
+#        uses: kroominator/rsync-deployments-simply-com@5.2.2
+#        with:
+#          switches: -avzr --delete
+#          path: ./
+#          remote_path: /var/www/ginkru.dk/public_html/labs/
+#          remote_host: linux347.unoeuro.com
+#          remote_user: ginkru.dk
+#          remote_password: Slaptazodis29
+#          remote_key: ${{ secrets.SSH_PRIVKEY }}
